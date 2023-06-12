@@ -1,0 +1,53 @@
+<div class="container">
+  <div class="d-flex min-vh-100 justify-content-center align-items-center">
+    <mat-card class="card">
+      <div class="mt-5 text_format text-center">
+        <button class="btn btn-primary btn-color">ToDo Application</button>
+
+      </div>
+      <div class="app mt-5 text-center">
+         A Simple and Easy to Use :)
+      </div>
+
+      <div class="row mt-5" style="padding-left:15px;">
+        <div class="col-7">
+          <div class="input">
+            <input type="text" class="input" [(ngModel)]="getValue">
+          </div>
+        </div>
+        <div class="col-2">
+          <div class="btn_add" (click)="listValue()"><mat-icon class="icon">add</mat-icon></div>
+
+        </div>
+        <div class="col-3">
+          <div class="btn_delete " (click)="deleteValue()"><mat-icon class="icon">delete</mat-icon></div>
+        </div>
+
+
+      </div>
+      <div class="accordian mt-4">
+        <div class="container">
+        <div class="row">
+          <div class="col-10">
+            <div class="card_Content" *ngFor="let a of todoDta">
+              <div class="row">
+                <div class="col-2">
+                  <div class="circle">
+                    <span class="tick"> <mat-icon>done</mat-icon></span>
+                  </div>
+                </div>
+                <div class="col-10">
+                  <span class="card_format text-center">{{a}}</span>
+                </div>
+              </div>
+            
+             
+            </div>
+          </div>
+
+        </div>
+      </div>
+      </div>
+    </mat-card>
+  </div>
+</div>
