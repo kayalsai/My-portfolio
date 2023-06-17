@@ -107,8 +107,8 @@
 }
 .tick{
    color:white;
-   margin-left: -1px;
-   margin-top: -6px;
+/*    margin-left: -1px;
+   margin-top: -6px; */
    font-weight: 700 !important;
 }
 .input{
