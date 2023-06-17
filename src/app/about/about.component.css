@@ -92,6 +92,7 @@
 }
 .tick{
    color:white;
+   margin-top:-6px;
    font-weight: 700 !important;
 }
 .card_skill{
