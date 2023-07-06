@@ -42,7 +42,7 @@
     font-size:18px
 }
 .btn-color{
-    background-color:#32418E;
+    background-color:#26425A;
     padding:12px;
     font-weight:500
 }
@@ -64,7 +64,10 @@
     font-size:13px;
 }
 .skills{
-    padding:100px;
+    padding-top:0px !important;
+    padding-bottom: 50px;
+    padding-left: 100px;
+    padding-right:100px
 
 }
 .font-style{
@@ -79,7 +82,7 @@
 .custom_card{
     border:2px solid transparent;
     height:60px;
-    padding:10px;
+    padding:18px;
     
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
@@ -92,6 +95,7 @@
 }
 .tick{
    color:white;
+   margin-top:-6px;
    font-weight: 700 !important;
 }
 .card_skill{
@@ -151,10 +155,11 @@
 }
 .footer{
     /* height:150px; */
-    background-color: #32418E;
+    background-color: #26425A ;
 }
 .mat-toolbar::ng-deep{
     background-color: #32418E !important;
+    /* background-color: #26425A !important; */
     height:80px
 }
 .footer_content{
@@ -196,7 +201,7 @@
     }
     .skills{
         padding: 10px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
     }
     .contain{
         margin-top: 0px;
@@ -245,6 +250,11 @@
     }
 
 }
+@media only screen and (min-width:351px) and (max-width:772px){
+    .align_itemstop{
+        margin-top: 0px !important;
+    }
+}
 @media only screen and  (min-width:1200px) and (max-width:1675px){
     .img{
         width:300px;
@@ -274,7 +284,7 @@
    
 }
 .bg-light{
-    background-color: #32418E !important;
+    background-color: #26425A !important;
     color:white
 }
 .navbar_font{

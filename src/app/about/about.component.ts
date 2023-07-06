@@ -73,8 +73,6 @@ export class AboutComponent implements OnInit{
       console.log(str[i])
       rev_str+=str[i];
       console.log(rev_str)
-    
-    
     }
     if(rev_str===str){
       console.log("pali")

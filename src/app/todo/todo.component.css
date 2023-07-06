@@ -107,6 +107,8 @@
 }
 .tick{
    color:white;
+   margin-left: -1px;
+   margin-top: -6px;
    font-weight: 700 !important;
 }
 .input{
@@ -114,4 +116,9 @@
     font-size: 20px;
     font-weight: 500;
     color:green
+}
+@media screen  and (max-width:500px){
+    .card_format{
+        padding-left: 10px;
+    }
 }
