@@ -283,7 +283,7 @@
 }
 @media screen and (min-width:328px) and (max-width:400px){
   .text_style{
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     line-height:normal
   }
    
@@ -307,6 +307,7 @@
 .navbar-toggler{
     color:white !important;
     background-color: white;
+    font-size:16px;
 }
 .me {
     margin-left: auto !important;
