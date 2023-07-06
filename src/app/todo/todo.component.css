@@ -107,8 +107,8 @@
 }
 .tick{
    color:white;
-/*    margin-left: -1px;
-   margin-top: -6px; */
+/* /*    margin-left: -1px; */
+   margin-top: -5px; 
    font-weight: 700 !important;
 }
 .input{
@@ -119,7 +119,7 @@
 }
 @media screen  and (max-width:500px){
     .card_format{
-        padding-left: 10px;
+        padding-left: 30px;
     }
 }
 

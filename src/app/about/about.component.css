@@ -42,7 +42,7 @@
     font-size:18px
 }
 .btn-color{
-    background-color:#26425A;
+    background-color:rgb(16, 16, 84);
     padding:12px;
     font-weight:500
 }
@@ -155,13 +155,13 @@
 }
 .footer{
     /* height:150px; */
-    background-color: #26425A ;
+    background-color:rgb(16, 16, 84);
 }
-.mat-toolbar::ng-deep{
+/* .mat-toolbar::ng-deep{
     background-color: #32418E !important;
-    /* background-color: #26425A !important; */
+    background-color: #26425A !important;
     height:80px
-}
+} */
 .footer_content{
     color:white;
     /* font-size: 20px; */
@@ -289,7 +289,7 @@
    
 }
 .bg-light{
-    background-color: #26425A !important;
+    background-color: rgb(16, 16, 84) !important;
     color:white
 }
 .navbar_font{
