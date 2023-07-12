@@ -164,7 +164,6 @@
 } */
 .footer_content{
     color:white;
-    /* font-size: 20px; */
     font-weight:500
 }
 .font_size{
@@ -235,11 +234,6 @@
         font-weight:500;
         color:rgb(16, 16, 84);
     }
-    /* .card_style2{
-        min-height:40vh;
-        width:100%;
-    
-    }  */
 }
 @media only screen and  (min-width:768px) and (max-width:991px){
     .foot{
