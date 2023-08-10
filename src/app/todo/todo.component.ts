@@ -5,26 +5,26 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './todo.component.html',
   styleUrls: ['./todo.component.css']
 })
-export class TodoComponent implements OnInit{
+export class TodoComponent implements OnInit {
 
-  getValue:any;
-  todoDta:string[]=[];
-  constructor(){}
-  ngOnInit():void{
-    
+  getValue: any;
+  todoDta: string[] = [];
+  constructor() { }
+  ngOnInit(): void {
+    console.log(this.todoDta.length, "length")
   }
-  // getValue(event:any){
-  //   // console.log(event.target.value)
-  //   this.getInputValue=event.target.value;
-  //   this.getdata+=this.getInputValue;
- 
-  //   console.log(this.getdata,"get")
-  // }
-  listValue(){
+  listValue() {
     this.todoDta.push(this.getValue);
-    this.getValue=''
+    this.getValue = ''
   }
-  deleteValue(){
-    this.todoDta.splice(0,1)
+  deleteValue(i: number) {
+
+    if (i >= 0 && i < this.todoDta.length) {
+      this.todoDta.splice(i, 1);
+    }
+  }
+  editValue(i: number,newItem:string) {
+    console.log(i,newItem, "i");
+    
   }
 }

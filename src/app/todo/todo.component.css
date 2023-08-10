@@ -53,23 +53,17 @@
 }
 
 .btn_delete{
-    border:2px solid rgb(174, 13, 13);
     width:50px;
     height:50px;
-    border-radius:10px;
     margin-top:5px;
-    background-color: rgb(174, 13, 13);
-    color:white;
+    color:rgb(174, 13, 13);
     text-align: center;
     padding-top:10px 
 }
 .btn_add{
-    border:2px solid green;
     width:50px;
     height:50px;
-    border-radius:10px;
-    background-color: green;
-    color:white;
+    color:green;
     margin-top:5px;
     text-align: center;
     padding-top:10px 
@@ -78,13 +72,12 @@
     background-color:white;
     color:rgb(174, 13, 13);
     font-weight: 700;
-    border:2px solid rgb(174, 13, 13);
+ 
 }
 .btn_add:hover{
     background-color:white;
     color:green;
     font-weight: 700;
-    border:2px solid green;
 }
 .card_format{
     font-weight:500;
@@ -93,7 +86,6 @@
     align-items: center;
     justify-content: flex-start;
     padding-top:20px;
-    /* padding-left: 20px; */
     color:green
 }
 .circle{
@@ -107,7 +99,7 @@
 }
 .tick{
    color:white;
-/* /*    margin-left: -1px; */
+
    margin-top: -5px; 
    font-weight: 700 !important;
 }
@@ -116,6 +108,14 @@
     font-size: 20px;
     font-weight: 500;
     color:green
+}
+.edit{
+    width:50px;
+    height:50px;
+    color:rgb(16, 16, 84);
+    margin-top:5px;
+    text-align: center;
+    padding-top:10px 
 }
 @media screen  and (max-width:500px){
     .card_format{

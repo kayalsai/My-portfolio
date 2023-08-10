@@ -6,7 +6,7 @@
 
       </div>
       <div class="app mt-5 text-center">
-         A Simple and Easy to Use :)
+        A Simple and Easy to Use :)
       </div>
 
       <div class="row mt-5" style="padding-left:15px;">
@@ -19,34 +19,37 @@
           <div class="btn_add" (click)="listValue()"><mat-icon class="icon">add</mat-icon></div>
 
         </div>
-        <div class="col-3">
-          <div class="btn_delete " (click)="deleteValue()"><mat-icon class="icon">delete</mat-icon></div>
-        </div>
 
 
       </div>
       <div class="accordian mt-4">
         <div class="container">
-        <div class="row">
-          <div class="col-10">
-            <div class="card_Content" *ngFor="let a of todoDta">
-              <div class="row">
-                <div class="col-2">
-                  <div class="circle">
-                    <span class="tick"> <mat-icon class="tick">done</mat-icon></span>
+          <div class="row">
+            <div class="col-10">
+              <div class="card_Content" *ngFor="let newData of todoDta; let i=index">
+                <div class="row">
+                  <div class="col-4">
+                    <div class="circle">
+                      <span class="tick"> <mat-icon class="tick">done</mat-icon></span>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <span class="card_format text-center">{{newData}}</span>
+                  </div>
+                  <div class="col-2">
+                    <div class="edit " (click)="editValue(i,newData)"><mat-icon class="icon">edit</mat-icon></div>
+                  </div>
+                  <div class="col-2">
+                    <div class="btn_delete " (click)="deleteValue(i)"><mat-icon class="icon">delete</mat-icon></div>
                   </div>
                 </div>
-                <div class="col-10">
-                  <span class="card_format text-center">{{a}}</span>
-                </div>
-              </div>
-            
-             
-            </div>
-          </div>
 
+
+              </div>
+            </div>
+
+          </div>
         </div>
-      </div>
       </div>
     </mat-card>
   </div>
