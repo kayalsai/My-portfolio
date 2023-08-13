@@ -7,6 +7,7 @@ import { SearchComponent } from './search/search.component';
 import { WatchComponent } from './watch/watch.component';
 import { TodoComponent } from './todo/todo.component';
 
+
 const routes: Routes = [
   {
   path:'skills',component:SkillComponent

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { TodoComponent } from './todo.component';
 
+import { UpdatedialogComponent } from './updatedialog.component';
 
-describe('TodoComponent', () => {
-  let component: TodoComponent;
-  let fixture: ComponentFixture<TodoComponent>;
+describe('UpdatedialogComponent', () => {
+  let component: UpdatedialogComponent;
+  let fixture: ComponentFixture<UpdatedialogComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TodoComponent ]
+      declarations: [ UpdatedialogComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TodoComponent);
+    fixture = TestBed.createComponent(UpdatedialogComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

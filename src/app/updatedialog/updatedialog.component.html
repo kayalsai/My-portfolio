@@ -1,0 +1,13 @@
+
+ <div class="container  d-flex align-items-center justify-content-center mt-5">
+
+    <mat-form-field appearance="outline">
+        <mat-label>update Data</mat-label>
+        <input matInput  [(ngModel)]="data.datum">
+      </mat-form-field>
+    
+ </div>
+ <div class="container  d-flex align-items-center justify-content-center mt-2">
+ <button mat-flat-button style="margin-right:10px" class="bgColor" (click)="onCancel()">No thanks</button>
+ <button mat-flat-button class="bgColor"  [mat-dialog-close]="data" (click)="getData()">Ok</button>
+ </div>
