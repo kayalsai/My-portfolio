@@ -1,20 +1,5 @@
 <div class="containers">
-  <!-- <mat-toolbar color="primary">
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-      <mat-icon>account_circle</mat-icon>
-    </button>
-    <span> {{ greetings()}} !!!</span>
-    <span class="right-align"></span>
-    <span>Learn Coding :)</span>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon"
-      [matMenuTriggerFor]="menu">
-      <mat-icon>perm_identity</mat-icon>
-      <mat-menu #menu="matMenu">
-        <button mat-menu-item (click)="skills()"><mat-icon>assessment</mat-icon>Skills</button>
-        <button mat-menu-item><mat-icon>assignment</mat-icon>Projects</button>
-      </mat-menu>
-    </button>
-  </mat-toolbar> -->
+  
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
@@ -251,7 +236,7 @@
 
     <div class="skill text-center mt-4">Click here to View the resume :)</div>
     <div class="text-center">
-      <button class="btn btn-primary btn-color mt-3 "><a href="/assets/images/kayal.pdf" class="navigate">Download CV</a></button>
+      <button class="btn btn-primary btn-color mt-3" (click)="downloadPDF()">Download CV</button>
     </div>
 
   </div>

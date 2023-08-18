@@ -88,6 +88,18 @@ export class AboutComponent implements OnInit{
     todo(){
       this.router.navigate(['/todo'])
     }
+    downloadPDF(){
+      const pdfFilepath='assets/images/kayal.pdf';
+      fetch(pdfFilepath).then(response=>response.blob()).
+      then(blob=>{
+        const url=window.URL.createObjectURL(blob);
+        const a=document.createElement('a');
+        a.href=url;
+        a.download='kayal.pdf';
+        a.click();
+        window.URL.revokeObjectURL(url)
+      })
+    }
   
   }
   
