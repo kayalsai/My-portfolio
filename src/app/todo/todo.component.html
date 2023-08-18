@@ -12,7 +12,7 @@
       <div class="row mt-5" style="padding-left:15px;">
         <div class="col-7">
           <div class="input">
-            <input type="text" class="input" [(ngModel)]="getValue">
+            <input type="text" class="input" [(ngModel)]="getValue" (keydown.enter)="listValue()">
           </div>
         </div>
         <div class="col-2">
