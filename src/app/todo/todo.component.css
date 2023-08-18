@@ -123,3 +123,13 @@
     }
 }
 
+@media screen and (max-width:2000px){
+    .card_Content{
+        margin-left:0px;
+    }
+    .card_format{
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+}
