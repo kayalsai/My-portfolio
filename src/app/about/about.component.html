@@ -1,12 +1,13 @@
 <div class="containers">
-  
+
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
       <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
         <mat-icon>account_circle</mat-icon>
       </button>
       <p class=" navbar_font pt-2">{{greetings()}}!!!</p>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+        aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -27,241 +28,341 @@
       </div>
     </div>
   </nav>
-  
+
 </div>
-<div class="cards" id="about">
-  <div class="card_style border shadow">
-    <div class="container">
-      <div class="row"> <!-- fs-5 for font-size-->
-        <div class="col-sm-12 col-md-12 col-lg-12  col-xl-8 text-center mt-10"> <span class="text">{{greetings()}}!!</span>
-          <p class=" fs-5  mt-4 text_style">Hi, This is <span> {{user}}</span></p>
-          <p class="context">Currently working as a <span class="font-style">FrontEnd
-              Developer</span>,I'm seeking to secure a responsible career
-            responsibility to
-            fully utilize my training and Skills,while making a significant contribution to the success of the company.
-          </p>
-          <button class="btn btn-primary btn-color" (click)="textChange()">Learn Coding :)</button>
-          <!-- <p class="mob_hider mt-5 fw-bold" *ngIf="textShow" style=" color: #3f51b5;"> {{user_name}}</p> -->
-
+<!-- <div class="bg-app"></div> -->
+<!-- about me -->
+<div class="profile">
+  <div class="row">
+    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6">
+      <img src="/assets/images/profileimage.jpeg" class="img " alt="profileimg" width="300" height="300">
+    </div>
+    <div class="col-sm-12 col-md-6 col-lg-6 col-xl-6 d-flex justify-content-center align-items-center">
+      <div class="about">
+        <div class="text">
+          kayalvizhi Dhavakumaran
         </div>
-        <div class="col-sm-12 col-md-12 ccol-lg-12 col-xl-4 ">
-          <!-- <img src="/assets/images/text.jpg" alt="developer" width="500px" height="500px"> -->
-          <div class=" text-center mt-5">
-            <img src="/assets/images/profileimage.jpeg" class="img " alt="profileimg" width="500" height="400">
-
-          </div>
-          <image-cropper [imageChangedEvent]="imageChangedEvent" [maintainAspectRatio]="true" [aspectRatio]="4 / 3"
-            format="png" (imageCropped)="imageCropped($event)" (imageLoaded)="imageLoaded($event)"
-            (cropperReady)="cropperReady()" (loadImageFailed)="loadImageFailed()"></image-cropper>
-
-          <!-- 
-          <button class="btnClass">Upload Image </button>
-          <input type="file" (change)="fileChangeEvent($event)" class="cf"> -->
-        </div>
+        <div class="dev">I'm a Software Developer based in chennai</div>
       </div>
     </div>
   </div>
+
+
 </div>
-<div class="skills" id="skills">
-  <div class="card_style2 border shadow skillset"> 
-    <div class="container">
-      <div class="card_format mt-5">
-        <div class="text-center fs-3 font-style mt-3 ">
-          Skills</div>
-    
-        <div class="skill text-center mt-4">Having a knowledge and experience with the below FrontEnd Development Skills
-        </div>
-    
-    
-      </div>
-      <div class="row mt-4 contain"> <!-- fs-5 for font-size-->
-        <div class="col-sm-12 col-md-6">
-          <div class="custom_card">
-            <div class="row">
-              <div class="col-2">
-                <div class="circle">
-                  <span class="tick"> <mat-icon class="tick">done</mat-icon></span>
-                </div>
-              </div>
-              <div class="col-10">
-                <span class="text">HTML</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 ">
-          <div class="custom_card">
-            <div class="row">
-              <div class="col-2">
-                <div class="circle">
-                  <span class="tick"> <mat-icon class="tick">done</mat-icon></span>
-                </div>
-              </div>
-              <div class="col-10">
-                <span class="text">CSS</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="row mt-5 align_itemstop"> <!-- fs-5 for font-size-->
-        <div class="col-sm-12 col-md-6">
-          <div class="custom_card">
-            <div class="row">
-              <div class="col-2">
-                <div class="circle">
-                  <span class="tick"> <mat-icon class="tick">done</mat-icon></span>
-                  
-                </div>
-              </div>
-              <div class="col-10">
-                <span class="text">JavaScript</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 ">
-          <div class="custom_card">
-            <div class="row">
-              <div class="col-2">
-                <div class="circle">
-                  <span class="tick"> <mat-icon class="tick">done</mat-icon></span>
-             
-                </div>
-              </div>
-              <div class="col-10">
-                <span class="text">Angular Framework</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row mt-5 align_itemstop"> <!-- fs-5 for font-size-->
-        <div class="col-sm-12 col-md-6">
-          <div class="custom_card">
-            <div class="row">
-              <div class="col-2">
-                <div class="circle">
-                  <span class="tick"> <mat-icon class="tick">done</mat-icon></span>
-      
-                </div>
-              </div>
-              <div class="col-10">
-                <span class="text">Material UI & Bootstrap</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-12 col-md-6 ">
-          <div class="custom_card">
-            <div class="row">
-              <div class="col-2">
-                <div class="circle">
-                  <span class="tick"> <mat-icon class="tick">done</mat-icon></span>
-                 
-                </div>
-              </div>
-              <div class="col-10">
-                <span class="text">PrimeNG & AgGrid Libraries</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+<!-- about content -->
+<div class="container-fluid">
+  <div class="border_line mt-5">
 
   </div>
-</div>
-<div class="container" id="projects">
-  <div class="card_format card_top">
-    <div class="text-center fs-3 font-style mt-3 ">
-      Projects</div>
+  <div class="row mt-5" id="about">
 
-    <div class="skill text-center mt-4">Projects that I have been developed during my learning period</div>
-
-
-  </div>
-
-</div>
-
-<div class="container_flid">
-  <div class="pro mt-5">
-    <div class="row">
-      <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4">
-        <div class="development_Card ">
-          <div class="text-center">
-            <img class="mt-5 image " src="/assets/images/portfolio.webp" height="150" width="150">
+    <div class="col-sm-12 col-md-12 col-lg-4 col-xl-4 about_dev">About Me</div>
+    <div class="col-sm-12 col-md-12 col-lg-8 col-xl-8 ">
+      <p class="context">Currently working as a <span class="font-style">FrontEnd
+          Developer</span>,I'm seeking to secure a responsible career
+        responsibility to
+        fully utilize my training and Skills,while making a significant contribution to the success of the company.
+      </p>
+      <!-- about -->
+      <div class="row mt-2 bg_background">
+        <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 mt-2 ">
+          <div class="back-border">
+            Location
           </div>
-          <div class="hr mt-5"></div>
-          <div class="text-center font-style fs-5 mt-4">PortFolio</div>
-          <div class="tex_format">This project has been developed using HTML,CSS and bootstrap.<a href="#about">
-            <span
-              class="navigation">Click Here</span></a>
-            </div>
+          <div class="details">
+            <mat-icon class="icon_class">location_on</mat-icon> <span class="about_font">Chennai,Tamil Nadu</span>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 mt-2">
+          <div class="back-border">
+            Linkedin
+          </div>
+          <div class="detailss">
+          <i class='fab fa-linkedin' style="margin-right: 6px;"></i>
+            <a href="https://www.linkedin.com/in/kayalvizhi-dhavakumaran-04b00a251/" target="_blank" class="link"><span
+                class="linkedin">Linkedin</span><mat-icon class="icon_class text_icon">call_made</mat-icon></a>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 mt-2">
+          <div class="back-border">
+            Email
+          </div>
+          <div class="details">
+            <mat-icon class="icon_class">mail</mat-icon> <span class="">kayalanu48@gmail.com </span>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-3 col-xl-3 mt-2">
+          <div class="back-border">
+            Phone
+          </div>
+          <div class="details">
+            <mat-icon class="icon_class">call</mat-icon> <span class="">+91 9952626836</span>
+          </div>
         </div>
       </div>
-      <div class="col-sm-12 col-md-12 col-lg-6 col-xl-4">
-        <div class="development_Card">
-          <div class="text-center">
-            <img class="mt-5 image " src="/assets/images/todo.png" height="150" width="150">
-          </div>
-          <div class="hr mt-5"></div>
-          <div class="text-center font-style fs-5 mt-4">ToDo App</div>
-          <div class="tex_format">This project has been developed using HTML,CSS,Bootstrap,Angular and Material UI.<span
-              class="navigation" (click)="todo()">Click Here</span></div>
-        </div>
 
-
-      </div>
-      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-4 dev_card">
-        <div class="development_Card">
-          <div class="text-center">
-            <img class="mt-5 image " src="/assets/images/resume.jpg" height="150" width="150">
-          </div>
-          <div class="hr mt-5"></div>
-          <div class="text-center font-style fs-5 mt-4">My Resume</div>
-          <div class="tex_format">This project has been developed using HTML,CSS and bootstrap.<span class="navigation"
-              (click)="resume()">Click Here</span></div>
-        </div>
-      </div>
     </div>
   </div>
-</div>
+  <div class="border_line mt-5">
 
-<div class="container" id="cv">
-  <div class="card_format1 mt-5">
-    <div class="text-center fs-3 font-style mt-3 ">
-      Download</div>
+  </div>
+  <div class="row mt-5">
 
-    <div class="skill text-center mt-4">Click here to View the resume :)</div>
-    <div class="text-center">
-      <button class="btn btn-primary btn-color mt-3" (click)="downloadPDF()">Download CV</button>
+    <div class=" col-sm-12 col-md-4 col-lg-4 col-xl-4 about_dev">Experience</div>
+    <div class="col-sm-12 col-md-8 col-lg-8 col-lg-8">
+      <div class="row mt-2">
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+          <div class="exp_border_exp">
+            <div class="work_exp pt-5">
+              <div>
+                <img  src="/assets/images/asminds-logo.png" class="images " alt="profileimg" width="50" height="50">
+              </div>
+              <div>
+                <div class="companies">
+                  Asminds Tech Software Solution Pvt Ltd
+
+                </div>
+                <div class="mt-2" style="color:teal;font-weight: 500;">UI Developer</div>
+              </div>
+            </div>
+            <div class="date mt-2">
+              Sep 2021 - Oct 2022
+            </div>
+            <div class="border_line mt-3"> </div>
+
+
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
+          <div class="exp_border_exp">
+            <div class="work_exp pt-5">
+              <div>
+                <img  src="/assets/images/Ofc.jpg" class="images" alt="profileimg" width="50" height="50">
+              </div>
+              <div class="class-block">
+                <div class="companies">
+                  Nila Apps Pvt Ltd
+
+                </div>
+                <div class="mt-2" style="color:teal;font-weight: 500;">UI Developer</div>
+
+              </div>
+            </div>
+            <div class="date mt-2">
+              Dec 2022 - Apr 2023
+            </div>
+            <div class="border_line mt-3"> </div>
+          </div>
+        </div>
+      </div>
+
     </div>
+  </div>
+  <div class="border_line mt-5">
 
   </div>
+  <div class="row mt-5" id="projects">
 
-</div>
+    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 about_dev">Projects</div>
+    <div class="col-sm-12 col-md-8 col-lg-8 col-lg-8">
+      <div class="row ">
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6 ">
+          <div class="exp_border">
+            <div class="work_exp pt-5">
+              <div>
+                <img src="/assets/images/todo.png" class="img " alt="profileimg" width="100" height="100">
+              
+              </div>
+              <div>
+                <div class="companies">
+                  ToDo Application</div>
+                <div class="mt-2 projects">This project has been developed using HTML,CSS and bootstrap.</div>
+              </div>
+            </div>
 
-<div class="container_fluid mt-4">
-  <div class="footer">
-    <div class="pt-5 text-center footer_content foot" style="font-size: 25px;">Connect with me on</div>
-    <div class="container">
-    <div class=" row text-center pt-4 ">
-      <div class="col-sm-12 col-md-12 col-lg-3  footer_content foot font_size ">
-        <span><mat-icon class="icon">email</mat-icon></span>kayalanu48@gmail.com
+            <div class="border_line mt-3"> </div>
+            <div class="mt-4 view_pro">
+              <div class=" d-flex justify-content-end">.<span class="navigation" (click)="todo()">View Project</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+          <div class="exp_border">
+            <div class="work_exp pt-5">
+              <div>
+                <img src="/assets/images/resume.jpg" class="img " alt="profileimg" width="100" height="100">
+              </div>
+              <div>
+                <div class="companies">
+                  Resume Design</div>
+                <div class="mt-2 projects">This project has been developed using HTML,CSS and bootstrap.</div>
+              </div>
+
+            </div>
+
+            <div class="border_line mt-3"> </div>
+            <div class="mt-4 view_pro">
+              <div class=" d-flex justify-content-end"><span class="navigation" (click)="resume()">View Project</span>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-sm-12 col-md-12  col-lg-3 footer_content foot font_size">
-        <span class="icon"><i class='fab fa-linkedin'></i></span> <a href="https://www.linkedin.com/in/kayalvizhi-dhavakumaran-04b00a251/" target="_blank" class="link">Linkedin</a>
-      </div>
-      <div class="col-sm-12 col-md-12  col-lg-3 footer_content foot font_size">
-        <span><mat-icon class="icon">call</mat-icon></span>+91 9952626836
-      </div>
-      <div class="col-sm-12 col-md-12  col-lg-3 footer_content foot font_size" style="padding-bottom:20px">
-        <span><mat-icon class="icon">location_on</mat-icon></span>Chennai- 600 096
-      </div>
+
     </div>
- 
   </div>
+  <div class="border_line mt-5">
+
   </div>
-</div>
+  <div class="row mt-5" id="skills">
+
+    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 about_dev">Skills</div>
+    <div class="col-sm-12 col-md-8 col-lg-8 col-lg-8">
+      <div class="row ">
+        <div class="col-12 ">
+          <div class="exp_border2 ">
+            <div class="container">
+
+              <div class="row  contain">
+                <div class="col-sm-12 col-md-6">
+                  <div class="custom_card">
+                    <div class="row">
+                      <div class="col-2">
+                        <div class="circle">
+                          <span class="tick"> <mat-icon class="tick">done</mat-icon></span>
+                        </div>
+                      </div>
+                      <div class="col-10">
+                        <span class="text">HTML</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6  ">
+                  <div class="custom_card">
+                    <div class="row">
+                      <div class="col-2">
+                        <div class="circle">
+                          <span class="tick"> <mat-icon class="tick">done</mat-icon></span>
+                        </div>
+                      </div>
+                      <div class="col-10">
+                        <span class="text">CSS</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="row  align_itemstop">
+                <div class="col-sm-12 col-md-6">
+                  <div class="custom_card">
+                    <div class="row">
+                      <div class="col-2">
+                        <div class="circle">
+                          <span class="tick"> <mat-icon class="tick">done</mat-icon></span>
+
+                        </div>
+                      </div>
+                      <div class="col-10">
+                        <span class="text">JavaScript</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6 ">
+                  <div class="custom_card">
+                    <div class="row">
+                      <div class="col-2">
+                        <div class="circle">
+                          <span class="tick"> <mat-icon class="tick">done</mat-icon></span>
+
+                        </div>
+                      </div>
+                      <div class="col-10">
+                        <span class="text">Angular Framework</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row  align_itemstop">
+                <div class="col-sm-12 col-md-6">
+                  <div class="custom_card">
+                    <div class="row">
+                      <div class="col-2">
+                        <div class="circle">
+                          <span class="tick"> <mat-icon class="tick">done</mat-icon></span>
+
+                        </div>
+                      </div>
+                      <div class="col-10">
+                        <span class="text">Material UI & Bootstrap</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-12 col-md-6 ">
+                  <div class="custom_card">
+                    <div class="row">
+                      <div class="col-2">
+                        <div class="circle">
+                          <span class="tick"> <mat-icon class="tick">done</mat-icon></span>
+
+                        </div>
+                      </div>
+                      <div class="col-10">
+                        <span class="text">PrimeNG & AgGrid Libraries</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  <div class="border_line mt-5">
+
+  </div>
+
+  <div class="row mt-5" id="cv">
+
+    <div class="col-sm-12 col-md-4 col-lg-4 col-xl-4 about_dev">Download CV</div>
+    <div class="col-sm-12 col-md-8 col-lg-8 col-lg-8">
+      <div class="row d-flex align-items-center justify-content-center">
+        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-6">
+          <div class="exp_border ">
+            <div class="work_exp pt-5">
+              <div>
+                <img src="/assets/images/resume.jpg" class="img " alt="profileimg" width="100" height="100">
+              </div>
+              <div>
+              <div class="companies">
+                Download
+               
+
+              </div>
+              <div class=" mt-2 projects">Click here to download the resume</div>
+            </div>
+            </div>
+
+            <div class="border_line mt-3"> </div>
+            <div class="mt-4 view_pro">
+              <div class=" d-flex justify-content-end">.<span class="navigation" (click)="downloadPDF()">Download
+                  CV</span></div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>

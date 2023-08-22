@@ -6,26 +6,30 @@ import { ResumeComponent } from './resume/resume.component';
 import { SearchComponent } from './search/search.component';
 import { WatchComponent } from './watch/watch.component';
 import { TodoComponent } from './todo/todo.component';
+import { AppComponent } from './app/app.component';
 
 
 const routes: Routes = [
   {
-  path:'skills',component:SkillComponent
+    path: 'skills', component: SkillComponent
   },
   {
-    path:'',component:AboutComponent
+    path: '', component: AboutComponent
   },
   {
-   path:'resume',component:ResumeComponent
+    path: 'resume', component: ResumeComponent
   },
   {
-    path:'search',component:SearchComponent
+    path: 'search', component: SearchComponent
   },
   {
-    path:'watch',component:WatchComponent
+    path: 'watch', component: WatchComponent
   },
   {
-    path:'todo',component:TodoComponent
+    path: 'todo', component: TodoComponent
+  },
+  {
+    path: 'portfolio', component: AppComponent
   }
 ];
 

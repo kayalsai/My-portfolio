@@ -82,6 +82,9 @@ export class AboutComponent implements OnInit{
     }
     
     }
+    portfolio(){
+      this.router.navigate(['/portfolio'])
+    }
     resume(){
       this.router.navigate(['/resume']);
     }
