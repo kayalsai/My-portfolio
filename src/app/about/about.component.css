@@ -143,12 +143,7 @@
     }
 }
 
-/* @media only screen and (min-width:768px) and (max-width:1210px) {
-    .custom_card {
-        height: 90px;
-    }
 
-} */
 
 @media only screen and (min-width:351px) and (max-width:772px) {
     .align_itemstop {
@@ -300,9 +295,12 @@
     margin-left: 10px;
 }
 
-/* .imges{
+.images_edu{
     border:2px solid transparent;
     border-radius:50%;
-    
+    width:100px;
+    height:100px;
     object-fit: cover;
-} */
+    margin-right: 10px;
+    margin-left: 10px;
+}
