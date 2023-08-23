@@ -132,23 +132,35 @@
 
 @media only screen and (min-width:350px) and (max-width:768px) {
     .exp_border2 {
-        height: 500px;
-        padding: 0px !important;
+    
+        padding: 35px !important;
+    }
+}
+@media only screen and (min-width:768px) and (max-width:992px) {
+    .exp_border2 {
+        
+        padding: 10px !important;
+    }
+}
+@media only screen and (min-width:993px) and (max-width:1200px) {
+    .exp_border2 {
+        
+        padding: 10px !important;
     }
 }
 
 @media only screen and (min-width:351px) and (max-width:992px) {
     .pros {
-        margin-top: 12px;
+        margin-top: 30px;
     }
 }
 
-@media only screen and (min-width:768px) and (max-width:1210px) {
+/* @media only screen and (min-width:768px) and (max-width:1210px) {
     .custom_card {
         height: 90px;
     }
 
-}
+} */
 
 @media only screen and (min-width:351px) and (max-width:772px) {
     .align_itemstop {
