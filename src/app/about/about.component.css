@@ -1,19 +1,19 @@
 .text_icon:hover {
-    color: rgb(16, 16, 84);
+    color: var(--blue);
 }
 .code_btn{
   border: 2px solid ;
   color: white;
-  background-color: rgb(16, 16, 84);
+  background-color:var(--blue);
   width: 150px;
   padding: 10px;
   text-align: center;
   border-radius: 7px;
 }
 .code_btn:hover{
-  border: 2px solid  rgb(16, 16, 84);
+  border: 2px solid var(--blue);
   background-color:white;
-  color:rgb(16, 16, 84);
+  color:var(--blue);
 }
 
 .context {
@@ -42,18 +42,18 @@
 }
 
 .link:hover {
-    color: rgb(16, 16, 84) !important;
+    color: var(--blue) !important;
 }
 
 .font-style {
     font-weight: 500;
-    color: rgb(16, 16, 84);
+    color: var(--blue);
 }
 
 .text {
     font-size: 20px;
     font-weight: 500;
-    color: rgb(16, 16, 84);
+    color:var(--blue);
 }
 
 .custom_card {
@@ -97,7 +97,7 @@
 .navigation {
     text-decoration: underline;
     font-size: 15px;
-    color: #32418E;
+    color: var(--darkblue);
     font-weight: 500;
     padding-right: 15px;
 }
@@ -134,7 +134,7 @@
     .text {
         font-size: 18px;
         font-weight: 500;
-        color: rgb(16, 16, 84);
+        color: var(--blue);
     }
 }
 
@@ -178,7 +178,7 @@
 
 
 .bg-light {
-    background-color: rgb(16, 16, 84) !important;
+    background-color:var(--blue) !important;
     color: white
 }
 
@@ -224,7 +224,7 @@
 }
 
 .navigate:hover {
-    color: #32418E !important
+    color: var(--darkblue) !important
 }
 
 /* app */
@@ -238,7 +238,7 @@
 }
 
 .bg_background {
-    background-color: rgb(16, 16, 84);
+    background-color:var(--blue);
     color: white;
     border-radius: 6px;
     padding: 15px;
@@ -257,7 +257,7 @@
 .companies {
     font-size: 18px;
     font-weight: 500;
-    color: rgb(16, 16, 84);
+    color: var(--blue);
 }
 
 .exp_border {
@@ -299,9 +299,9 @@
 }
 
 .bg_background:hover {
-    color: rgb(16, 16, 84) !important;
+    color: var(--blue) !important;
     background-color: white;
-    border: 2px solid rgb(16, 16, 84);
+    border: 2px solid var(--blue);
 }
 
 .class-block {

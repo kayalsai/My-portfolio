@@ -6,3 +6,7 @@ body{
     font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
+:root{
+  --blue:rgb(16, 16, 84);
+  --darkblue:#32418E;
+}

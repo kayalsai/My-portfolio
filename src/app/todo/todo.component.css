@@ -9,7 +9,7 @@
 }
 
 .btn-color {
-    background-color: rgb(16, 16, 84);
+    background-color:var(--blue);
     font-size: 20px;
     font-weight: 500;
     letter-spacing: 1px;
@@ -32,7 +32,7 @@
 }
 .app{
     font-size:20px;
-    color:#32418E;  
+    color:#32418E;
      font-weight: 700
 }
 
@@ -51,7 +51,7 @@
     margin-top:5px;
     color:rgb(174, 13, 13);
     text-align: center;
-    padding-top:10px 
+    padding-top:10px
 }
 .btn_add{
     width:50px;
@@ -59,13 +59,13 @@
     color:green;
     margin-top:5px;
     text-align: center;
-    padding-top:10px 
+    padding-top:10px
 }
 .btn_delete:hover{
     background-color:white;
     color:rgb(174, 13, 13);
     font-weight: 700;
- 
+
 }
 .btn_add:hover{
     background-color:white;
@@ -111,10 +111,10 @@ outline: none;
 .edit{
     width:50px;
     height:50px;
-    color:rgb(16, 16, 84);
+    color:var(--blue);
     margin-top:5px;
     text-align: center;
-    padding-top:10px 
+    padding-top:10px
 }
 @media screen  and (max-width:500px){
     .card_format{

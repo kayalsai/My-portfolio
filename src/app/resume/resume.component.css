@@ -4,28 +4,28 @@
    margin-left:auto;
    margin-right:auto;
    border:1px solid green
-    
+
 }
 .textColor{
-    color:rgb(16, 16, 84);
+    color:var(--blue);
 }
 .icon{
     font-size:15px;
-    color:rgb(16, 16, 84);
+    color:var(--blue);
     margin-bottom: -14px;
 }
 
 .textCol{
-    
+
     border-bottom:2px solid rgb(2, 15, 54);
-    color:rgb(16, 16, 84);
+    color:var(--blue);
     font-size: 15px;
 }
 .pt-15{
     padding-left:15px
 }
 .textCols{
-    color:rgb(16, 16, 84);
+    color:var(--blue);
     font-size: 15px;
 }
 .icons{
@@ -41,6 +41,6 @@
 .dot{
     border-radius:50%;
     font-size: 0px;
-    border: 5px solid rgb(16, 16, 84);
+    border: 5px solid var(--blue);
     margin-right:5px
 }
